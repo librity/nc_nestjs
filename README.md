@@ -25,9 +25,11 @@
 ## Table of Contents
 
 - [About](#about)
-- [Installation Started](#installation)
+- [Endpoints](#endpoints)
+- [Installation](#installation)
 - [Running the app](#running)
 - [Tests](#tests)
+- [Nest commands](#commands)
 - [Support](#support)
 - [License](#license)
 
@@ -37,6 +39,16 @@ A movies API made with NestJS.
 
 - [Take the course too!](https://nomadcoders.co/nestjs-fundamentals/lobby)
 - [Certificate of Completion]()
+
+## Endpoints <a name = "endpoints"></a>
+
+`MoviesController`
+
+- `GET` http://localhost:3000/movies
+- `GET` http://localhost:3000/movies/:id
+- `POST` http://localhost:3000/movies
+- `PATCH` http://localhost:3000/movies/:id
+- `DELETE` http://localhost:3000/movies/:id
 
 ## Installation <a name = "installation"></a>
 
@@ -68,6 +80,14 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Nest commands <a name = "commands"></a>
+
+```bash
+# Generate a new controller
+$ nest generate co
+$ nest g co
 ```
 
 ## Support <a name = "support"></a>
