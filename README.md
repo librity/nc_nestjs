@@ -32,6 +32,9 @@
 - [Nest commands](#commands)
 - [Support](#support)
 - [License](#license)
+- [Libs](#libs)
+- [Docs](#docs)
+- [Resources](#resources)
 
 ## About <a name = "about"></a>
 
@@ -85,9 +88,16 @@ $ npm run test:cov
 ## Nest commands <a name = "commands"></a>
 
 ```bash
+# Get all commands
+$ nest
+
 # Generate a new controller
-$ nest generate co
+$ nest generate controller
 $ nest g co
+
+# Generate a new service
+$ nest generate service
+$ nest g s
 ```
 
 ## Support <a name = "support"></a>
@@ -103,3 +113,16 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License <a name = "license"></a>
 
 Nest is [MIT licensed](LICENSE).
+
+## Libs <a name = "libs"></a>
+
+- https://github.com/nestjs/nest
+
+## Docs <a name = "docs"></a>
+
+- https://docs.nestjs.com/
+- https://www.typescriptlang.org/docs/handbook/decorators.html#introduction
+
+## Resources <a name = "resources"></a>
+
+- https://en.wikipedia.org/wiki/Single-responsibility_principle
