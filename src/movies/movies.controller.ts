@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from '@nestjs/common';
 
 @Controller('movies')
@@ -15,6 +16,11 @@ export class MoviesController {
     return 'Matrix, Harry Potter, Fight Club';
   }
 
+  @Get('search')
+  search(@Query('year') year: string) {
+    return `Searching for a movie released after ${year}`;
+  }
+
   @Get('/:id')
   getOne(@Param('id') id: string) {
     return `${id}: Matrix Reloaded`;
@@ -22,12 +28,15 @@ export class MoviesController {
 
   @Post()
   create(@Body() movieData) {
-    return `Successfully created Matrix Revolutions`;
+    return movieData;
   }
 
   @Patch('/:id')
-  update(@Param('id') id: string) {
-    return `${id} Animatrix updated to Enter the Matrix`;
+  update(@Param('id') id: string, @Body() updateData) {
+    return {
+      id: id,
+      ...updateData,
+    };
   }
 
   @Delete('/:id')
