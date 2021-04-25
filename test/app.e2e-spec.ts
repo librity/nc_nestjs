@@ -16,9 +16,14 @@ describe('AppController (e2e)', () => {
   });
 
   it('/ (GET)', () => {
-    return request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!');
+    const expected = {
+      message: 'Welcome to Nest Movies 1.0!',
+      method: 'GET',
+      hostname: '127.0.0.1',
+      ip: '::ffff:127.0.0.1',
+      url: '/',
+    };
+
+    return request(app.getHttpServer()).get('/').expect(200).expect(expected);
   });
 });

@@ -11,7 +11,7 @@ export class AppService {
   home() {
     return {
       message: 'Welcome to Nest Movies 1.0!',
-      headers: this.request.headers,
+      // headers: this.request.headers,
       method: this.request.method,
       hostname: this.request.hostname,
       ip: this.request.ip,
