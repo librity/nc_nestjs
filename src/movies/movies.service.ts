@@ -13,9 +13,13 @@ export class MoviesService {
 
   byId(id: number): Movie {
     const movie = this.movies.find((movie) => movie.id === id);
-    if (!movie) throw new NotFoundException(`Movie with ID ${id} not found`);
+    if (!movie) throw new NotFoundException(`Movie with id ${id} not found`);
 
     return movie;
+  }
+
+  byYear(year: number): Movie[] {
+    return this.movies.filter((movie) => movie.year === year);
   }
 
   create(movieData: CreateMovieDTO) {

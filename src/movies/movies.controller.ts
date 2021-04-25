@@ -23,8 +23,8 @@ export class MoviesController {
   }
 
   @Get('search')
-  search(@Query('year') year: string) {
-    return `Searching for a movie released after ${year}`;
+  search(@Query('year') year: number) {
+    return this.moviesService.byYear(year);
   }
 
   @Get('/:id')
