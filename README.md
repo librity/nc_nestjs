@@ -41,13 +41,14 @@
 A movies API made with NestJS.
 
 - [Take the course too!](https://nomadcoders.co/nestjs-fundamentals/lobby)
-- [Certificate of Completion]()
+- [Certificate of Completion](https://nomadcoders.co/certs/faf0e59c-5462-4d9a-90c9-e154a75528eb)
 
 ## Endpoints <a name = "endpoints"></a>
 
 `MoviesController`
 
 - `GET` http://localhost:3000/movies
+- `GET` http://localhost:3000/movies?year=year
 - `GET` http://localhost:3000/movies/:id
 - `POST` http://localhost:3000/movies
 - `PATCH` http://localhost:3000/movies/:id

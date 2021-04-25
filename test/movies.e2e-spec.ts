@@ -48,6 +48,21 @@ describe('MoviesController (e2e)', () => {
         .send(body)
         .expect(201);
     });
+
+    it('should return bad request', () => {
+      const body = {
+        title: 'Tenet',
+        director: 'Christopher Nolan',
+        year: 2021,
+        genres: ['action', 'time travel'],
+        bad: 'BAD',
+      };
+
+      return request(app.getHttpServer())
+        .post('/movies')
+        .send(body)
+        .expect(400);
+    });
   });
 
   describe('/movies/:id (GET)', () => {
@@ -68,6 +83,24 @@ describe('MoviesController (e2e)', () => {
 
     it('should return not found', () => {
       return request(app.getHttpServer()).get('/movies/10').expect(404);
+    });
+  });
+
+  describe('/movies/:id (PATCH)', () => {
+    it('should update the movie', () => {
+      const body = {
+        title: 'UPDATED',
+        year: 3000,
+      };
+
+      return request(app.getHttpServer())
+        .patch('/movies/1')
+        .send(body)
+        .expect(200);
+    });
+
+    it('should return not found', () => {
+      return request(app.getHttpServer()).patch('/movies/10').expect(404);
     });
   });
 
