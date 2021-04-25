@@ -99,6 +99,10 @@ $ nest g co
 $ nest generate service
 $ nest g s
 
+# Generate a new module
+$ nest generate module
+$ nest g mo
+
 # Lint project
 $ npm run lint
 ```
@@ -122,6 +126,7 @@ Nest is [MIT licensed](LICENSE).
 - https://github.com/nestjs/nest
 - https://github.com/typestack/class-validator
 - https://github.com/typestack/class-transformer
+- https://github.com/nestjs/mapped-types
 
 ## Docs <a name = "docs"></a>
 
