@@ -124,6 +124,7 @@ Nest is [MIT licensed](LICENSE).
 ## Libs <a name = "libs"></a>
 
 - https://github.com/nestjs/nest
+- https://github.com/fastify/fastify
 - https://github.com/typestack/class-validator
 - https://github.com/typestack/class-transformer
 - https://github.com/nestjs/mapped-types
@@ -136,3 +137,4 @@ Nest is [MIT licensed](LICENSE).
 ## Resources <a name = "resources"></a>
 
 - https://en.wikipedia.org/wiki/Single-responsibility_principle
+- https://stackoverflow.com/questions/54979729/howto-get-req-user-in-services-in-nest-js
