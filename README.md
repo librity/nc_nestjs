@@ -85,7 +85,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Nest commands <a name = "commands"></a>
+## Bash commands <a name = "commands"></a>
 
 ```bash
 # Get all commands
@@ -98,6 +98,9 @@ $ nest g co
 # Generate a new service
 $ nest generate service
 $ nest g s
+
+# Lint project
+$ npm run lint
 ```
 
 ## Support <a name = "support"></a>
@@ -117,6 +120,8 @@ Nest is [MIT licensed](LICENSE).
 ## Libs <a name = "libs"></a>
 
 - https://github.com/nestjs/nest
+- https://github.com/typestack/class-validator
+- https://github.com/typestack/class-transformer
 
 ## Docs <a name = "docs"></a>
 
